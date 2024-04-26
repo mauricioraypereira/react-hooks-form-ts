@@ -73,7 +73,51 @@ const Form = () => {
           </small>
         )}
       </div>
-      
+      <div className="flex flex-col gap-2 mb-2">
+        <label htmlFor="password">Senha:</label>
+        <input 
+          type="password" 
+          id="password" 
+          placeholder="Digite sua senha" 
+          {...register("password")}
+          className="h-10 pl-2 rounded-md border border-slate-300" 
+        />
+        {errors.password && (
+          <small className="text-red-500 italic">
+            {errors.password.message}
+          </small>
+        )}
+      </div>
+      <div className="flex flex-col gap-2 mb-2">
+        <label htmlFor="confirmpassword">Confirmação de Senha:</label>
+        <input 
+          type="password" 
+          id="confirmpassword" 
+          placeholder="Digite novamente sua senha" 
+          {...register("confirmpassword")}
+          className="h-10 pl-2 rounded-md border border-slate-300" 
+        />
+        {errors.confirmpassword && (
+          <small className="text-red-500 italic">
+            {errors.confirmpassword.message}
+          </small>
+        )}
+      </div>
+      <div className="flex flex-col gap-2 mb-2">
+        <div className="flex gap-2">
+          <input 
+            type="checkbox" 
+            id="agreeterms" 
+            {...register("agreeterms")}
+          />
+          <label htmlFor="agreeterms">Eu aceito os termos</label>
+        </div>
+        {errors.agreeterms && (
+          <small className="text-red-500 italic">
+            {errors.agreeterms.message}
+          </small>
+        )}
+      </div>
       <button 
         type="submit" 
         className="w-full h-11 bg-cyan-400 rounded-md my-2 hover:bg-cyan-500 transition-all">
