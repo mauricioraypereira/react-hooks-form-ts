@@ -5,7 +5,7 @@
 
 React Hooks Form é uma aplicação frontend construída durante o curso de **React JS com TypeScript Direto ao Ponto c/ projetos**, com o intuito de mostrar os conhecimento aprendidos.
 
-A aplicação consiste um formulário com algumas validações feitas utilizando zod e a estilização feita atráves de tailwind.
+A aplicação consiste um formulário com algumas validações realizadas utilizando zod e a estilização feita atráves de tailwind.
 
 ## Screenshots
 
